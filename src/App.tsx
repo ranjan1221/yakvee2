@@ -77,36 +77,32 @@ const suppliedLogos = [
   ['lil_igloo_logo_square.avif', 'Little Igloo'],
   ['signify-logo.svg', 'Signify'],
   ['instamart-logo-vector_logoshape.com.svg', 'Instamart'],
-  ['PAYAL-KEYAL-WITHOUT-27.webp', 'Payal Keyal'],
+  ['payal-keyal-dark.png', 'Payal Keyal'],
   ['Zoet_For_Website.webp', 'Zoet'],
   ['350879139_633113418875222_3952075430178214945_n.png', 'Pearls India'],
   ['416748217_1534718534036178_5283738482777238866_n.png', 'High On Churros'],
-  ['608857678_18356744929201640_7860221194799015723_n.png', 'Gemeria'],
-  ['715375796_18049721957777624_2361478550552287758_n.png', 'Nytarra'],
-  ['591177717_17862562200550177_769797769974001647_n.jpg', 'Majestic Pure'],
-  ['logo_107a2c0c-7f30-46ef-b852-05b27807f310_110x@2x.avif', 'Brand logo'],
-  ['logo_4046f8a2-ed2e-4616-b823-9c7e32a3083d.avif', 'Brand logo'],
+  ['gemeria-hair-logo.png', 'Gemeria'],
+  ['nytarra-logo.png', 'Nytarra'],
+  ['logo_4046f8a2-ed2e-4616-b823-9c7e32a3083d.avif', 'Majestic Pure'],
+  ['logo_107a2c0c-7f30-46ef-b852-05b27807f310_110x@2x.avif', 'Sleepy Owl'],
+  ['Gemini_Generated_Image_ozhhpiozhhpiozhh.png', 'Hyderabadi Chacha'],
   ['ChatGPT Image Sep 4, 2026, 02_28_29 PM.png', 'Purely Pufflicious'],
-  ['ChatGPT Image Sep 4, 2026, 02_31_35 PM.png', 'Ajourney'],
+  ['ChatGPT Image Sep 4, 2026, 02_31_35 PM.png', 'Karvan'],
   ['ChatGPT Image Sep 4, 2026, 02_33_52 PM.png', 'Shri Shyam Tiffins'],
   ['ChatGPT Image Sep 4, 2026, 02_37_18 PM.png', 'YOGO'],
-  ['Gemini_Generated_Image_hi9q7dhi9q7dhi9q.png', 'Brand logo'],
-  ['Gemini_Generated_Image_ozhhpiozhhpiozhh.png', 'Brand logo'],
   ['Untitled_800_x_400_px_e2645dc5-92da-44b1-bccc-ed9161f37d0d.webp', 'AAURAM'],
-  ['ChatGPT Image Sep 4, 2026, 04_44_01 PM.png', 'AARA'],
-  ['Gemini_Generated_Image_9cti749cti749cti.png', 'AARA'],
 ] as const;
 
 // Work gallery showcasing client projects with primary images and tags for filtering
 const projects: Project[] = [
   // Featured client work
-  { name: 'Payal Keyal', category: 'Premium stationery', image: `${clientPath}Payal Keyal.jpeg`, tags: ['Gifting', 'Custom'], client: 'Payal Keyal', description: 'A rich, tactile stationery suite with deep colour and floral detail designed to make every handover feel special.' },
-  { name: 'Aurencia', category: 'Premium presentation box', image: `${clientPath}aurencia.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Aurencia', description: 'A deep navy rigid box finished with gold detailing, built to turn a gift into a keepsake.' },
-  { name: 'Aweri', category: 'Gifting & lifestyle', image: `${clientPath}aweri.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Aweri', description: 'A vivid presentation set for Aweri, designed around branded gifting and product presentation.' },
-  { name: 'Serenity Hue', category: 'Lifestyle gifting', image: `${clientPath}serenity hue.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Serenity Hue', description: 'A considered gifting presentation for Serenity Hue with coordinated packaging and inserts.' },
-  { name: 'Shri Shyam Tiffins', category: 'Food packaging', image: `${clientPath}shrre shyam tiffins.jpeg`, tags: ['Boxes', 'Food', 'Custom'], client: 'Shri Shyam Tiffins', description: 'Branded food packaging for Shri Shyam Tiffins, bringing product information and presentation together.' },
-  { name: 'Little Igloo', category: 'Baby essentials', image: `${clientPath}Little Igloo.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Little Igloo', description: 'A soft, story-led packaging presentation created for Little Igloo.' },
-  { name: 'Pearls India', category: 'Corporate gifting', image: `${clientPath}pearls india.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Pearls India', description: 'A floral presentation box created for Pearls India, with a carefully finished opening experience.' },
+  { name: 'Payal Keyal', category: 'Fashion & couture', image: `${clientPath}Payal Keyal.jpeg`, tags: ['Gifting', 'Custom'], client: 'Payal Keyal', description: 'A rich, tactile couture presentation box with deep colour and floral detail designed to make every handover feel special.' },
+  { name: 'Aurencia', category: 'Luxury pens & stationery', image: `${clientPath}aurencia.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Aurencia', description: 'A deep navy rigid box finished with gold detailing, built to turn a gift into a keepsake.' },
+  { name: 'Aweri', category: 'Sweets & confectionery', image: `${clientPath}aweri.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Aweri', description: 'A vivid presentation set for Aweri, designed around branded gifting and product presentation.' },
+  { name: 'Serenity Hue', category: 'Beauty & skincare', image: `${clientPath}serenity hue.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Serenity Hue', description: 'A considered gifting presentation for Serenity Hue with coordinated packaging and inserts.' },
+  { name: 'Shri Shyam Tiffins', category: 'Tiffin & food service', image: `${clientPath}shrre shyam tiffins.jpeg`, tags: ['Boxes', 'Food', 'Custom'], client: 'Shri Shyam Tiffins', description: 'Branded food packaging for Shri Shyam Tiffins, bringing product information and presentation together.' },
+  { name: 'Little Igloo', category: 'Baby care & essentials', image: `${clientPath}Little Igloo.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Little Igloo', description: 'A soft, story-led packaging presentation created for Little Igloo.' },
+  { name: 'Pearls India', category: 'Jewellery', image: `${clientPath}pearls india.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Pearls India', description: 'A floral presentation box created for Pearls India, with a carefully finished opening experience.' },
   
   // Food & Beverage
   { name: 'Sprite', category: 'Beverage campaign', image: `${clientPath}Sprite.jpeg`, tags: ['Boxes', 'Food', 'Custom'], client: 'Sprite', description: 'A bold campaign packaging presentation for Sprite Korean Edition.' },
@@ -115,19 +111,19 @@ const projects: Project[] = [
   { name: 'Tencha Blends', category: 'Tea packaging', image: `${clientPath}Tencha.jpeg`, tags: ['Boxes', 'Gifting', 'Food', 'Custom'], client: 'Tencha Blends', description: 'Tea packaging for Tencha Blends, with a coordinated front and information-led back panel.' },
   
   // Additional clients
-  { name: 'YOGO', category: 'Dairy & desserts', image: `${clientPath}YOGO.jpeg`, tags: ['Boxes', 'Food', 'Custom'], client: 'YOGO', description: 'Premium packaging for YOGO, combining functionality with vibrant brand identity.' },
-  { name: 'Mamaearth', category: 'Natural beauty', image: `${clientPath}Mamaearth.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Mamaearth', description: 'Eco-conscious packaging design for Mamaearth, reflecting their brand values.' },
+  { name: 'YOGO', category: 'Frozen yoghurt', image: `${clientPath}YOGO.jpeg`, tags: ['Boxes', 'Food', 'Custom'], client: 'YOGO', description: 'Premium packaging for YOGO, combining functionality with vibrant brand identity.' },
+  { name: 'Mamaearth', category: 'Natural beauty & personal care', image: `${clientPath}Mamaearth.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Mamaearth', description: 'Eco-conscious packaging design for Mamaearth, reflecting their brand values.' },
   { name: 'High On Churros', category: 'Food packaging', image: `${clientPath}High On Churros.jpeg`, tags: ['Boxes', 'Food', 'Custom'], client: 'High On Churros', description: 'Fun and engaging packaging for High On Churros designed for immediate shelf appeal.' },
-  { name: 'Hyderabadi Chacha', category: 'Regional specialty', image: `${clientPath}Hyderabadi Chacha.jpeg`, tags: ['Boxes', 'Food', 'Custom'], client: 'Hyderabadi Chacha', description: 'Traditional meets modern in this packaging for Hyderabadi Chacha.' },
-  { name: 'AAURAM', category: 'Wellness packaging', image: `${clientPath}AAURAM.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'AAURAM', description: 'Premium wellness packaging solution for AAURAM brand.' },
-  { name: 'Carat Bazaar', category: 'Luxury gifting', image: `${clientPath}Carat Bazaar.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Carat Bazaar', description: 'Luxury packaging for Carat Bazaar, emphasizing premium positioning.' },
-  { name: 'Gemeria', category: 'Luxury goods', image: `${clientPath}Gemeria.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Gemeria', description: 'Sophisticated packaging design for Gemeria brand.' },
-  { name: 'Nytarra', category: 'Fashion & lifestyle', image: `${clientPath}Nytarra.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Nytarra', description: 'Elegant packaging for Nytarra, reflecting contemporary style.' },
-  { name: 'Weaver Story', category: 'Artisan products', image: `${clientPath}weaver story.jpeg`, tags: ['Boxes', 'Custom'], client: 'Weaver Story', description: 'Authentic packaging for Weaver Story, celebrating artisanal craftsmanship.' },
-  { name: 'Karvan', category: 'Premium goods', image: `${clientPath}karvan.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Karvan', description: 'Distinguished packaging for Karvan brand.' },
-  { name: 'Zoet', category: 'Confectionery', image: `${clientPath}Zoet.jpeg`, tags: ['Boxes', 'Food', 'Custom'], client: 'Zoet', description: 'Delightful packaging design for Zoet confectionery.' },
-  { name: 'Kimai', category: 'Premium collection', image: `${clientPath}kimai.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Kimai', description: 'Sophisticated packaging for Kimai product range.' },
-  { name: 'Procode', category: 'Technology packaging', image: `${clientPath}Procode.jpeg`, tags: ['Boxes', 'Custom'], client: 'Procode', description: 'Professional packaging solution for Procode.' },
+  { name: 'Hyderabadi Chacha', category: 'Restaurant & takeaway', image: `${clientPath}Hyderabadi Chacha.jpeg`, tags: ['Boxes', 'Food', 'Custom'], client: 'Hyderabadi Chacha', description: 'Traditional meets modern in this packaging for Hyderabadi Chacha.' },
+  { name: 'AAURAM', category: 'Incense & home fragrance', image: `${clientPath}AAURAM.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'AAURAM', description: 'A slim sliding-drawer pack for AAURAM luxury incense sticks, finished with hand-drawn artwork.' },
+  { name: 'Carat Bazaar', category: 'Fine jewellery', image: `${clientPath}Carat Bazaar.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Carat Bazaar', description: 'A jewellery carry bag for Carat Bazaar, with foil detailing and a printed interior.' },
+  { name: 'Gemeria', category: 'Hair care & extensions', image: `${clientPath}Gemeria.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Gemeria', description: 'A clean carry bag for Gemeria Hair, kept minimal so the brand mark leads.' },
+  { name: 'Nytarra', category: 'Incense & home fragrance', image: `${clientPath}Nytarra.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Nytarra', description: 'A drawer-style box for Nytarra luxury incense cones, with vivid illustrated panels.' },
+  { name: 'Weaver Story', category: 'Handloom & textiles', image: `${clientPath}weaver story.jpeg`, tags: ['Boxes', 'Custom'], client: 'Weaver Story', description: 'Authentic packaging for Weaver Story, celebrating artisanal craftsmanship.' },
+  { name: 'Karvan', category: 'Perfume & attar', image: `${clientPath}karvan.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Karvan', description: 'A window box for Karvan pure ittars, holding three bottles in a tight, protective fit.' },
+  { name: 'Zoet', category: 'Ice cream & desserts', image: `${clientPath}Zoet.jpeg`, tags: ['Boxes', 'Food', 'Custom'], client: 'Zoet', description: 'A ribboned ice cream hamper for Zoet, built to travel and still present beautifully.' },
+  { name: 'Kimai', category: 'Fine jewellery', image: `${clientPath}kimai.jpeg`, tags: ['Boxes', 'Gifting', 'Custom'], client: 'Kimai', description: 'A ribbon-handled jewellery carry bag for Kimai, finished in deep teal and gold foil.' },
+  { name: 'Procode', category: 'Consumer electronics', image: `${clientPath}Procode.jpeg`, tags: ['Boxes', 'Custom'], client: 'Procode', description: 'Retail-ready electronics packaging for Procode, with product specs designed into the panels.' },
   { name: 'Troveaa', category: 'E-commerce packaging', image: `${clientPath}Troveaa.jpeg`, tags: ['Boxes', 'Custom'], client: 'Troveaa', description: 'Branded packaging for Troveaa online marketplace.' },
   
   // Bag projects
@@ -152,46 +148,46 @@ const clients: Client[] = [
   { name: 'Swiggy', image: `${clientPath}Swiggy.jpeg`, logoImage: `${clientPath}swiggy-com-logo.png`, category: 'Food Delivery', featured: true },
   { name: 'Instamart', image: `${clientPath}Instamart.jpeg`, category: 'Grocery & Retail', featured: true },
   { name: 'Mamaearth', image: `${clientPath}mamaearth2.jpg`, logoImage: `${clientPath}Mamaearthlogo.png`, category: 'Natural Beauty', featured: true },
-  { name: 'Sleepy Owl', image: `${clientPath}Sleepy Owl.jpeg`, category: 'Beverages', featured: true },
+  { name: 'Sleepy Owl', image: `${clientPath}Sleepy Owl.jpeg`, logoImage: `${logoPath}logo_107a2c0c-7f30-46ef-b852-05b27807f310_110x@2x.avif`, category: 'Coffee', featured: true },
   { name: 'Tencha Blends', image: `${clientPath}Tencha.jpeg`, logoImage: `${clientPath}Tencha_Horizontal_Logo_PNG.png`, category: 'Wellness & Tea', featured: true },
-  { name: 'Signify', image: `${clientPath}Signify.jpeg`, logoImage: '/images/logos/signify-logo.svg', category: 'Brand Packaging', featured: true },
-  { name: 'Majestic Pure', image: `${clientPath}Majestic Pure.jpeg`, category: 'Lifestyle & Wellness', featured: true },
+  { name: 'Signify', image: `${clientPath}Signify.jpeg`, logoImage: `${logoPath}signify-logo.svg`, category: 'Corporate Gifting', featured: true },
+  { name: 'Majestic Pure', image: `${clientPath}Majestic Pure.jpeg`, logoImage: `${logoPath}logo_4046f8a2-ed2e-4616-b823-9c7e32a3083d.avif`, category: 'Home Fragrance & Beauty', featured: true },
   { name: 'Sprite', image: `${clientPath}Sprite.jpeg`, logoImage: `${clientPath}sprite-lemon-lime-soda-png-logo-4.png`, category: 'Beverages', featured: true },
   
   // Premium clients
-  { name: 'Aurencia', image: `${clientPath}aurencia.jpeg`, logoImage: '/images/logos/aurencia_logo_4.avif', category: 'Premium Gifting' },
-  { name: 'Payal Keyal', image: `${clientPath}Payal Keyal.jpeg`, category: 'Luxury Stationery' },
-  { name: 'Serenity Hue', image: `${clientPath}serenity hue.jpeg`, logoImage: `${clientPath}SERENITY-HUE-LOGO.avif`, category: 'Lifestyle & Wellness' },
-  { name: 'Shri Shyam Tiffins', image: `${clientPath}shrre shyam tiffins.jpeg`, category: 'Food & Beverage' },
+  { name: 'Aurencia', image: `${clientPath}aurencia.jpeg`, logoImage: `${logoPath}aurencia_logo_4.avif`, category: 'Luxury Pens & Stationery' },
+  { name: 'Payal Keyal', image: `${clientPath}Payal Keyal.jpeg`, logoImage: `${logoPath}payal-keyal-dark.png`, category: 'Fashion & Couture' },
+  { name: 'Serenity Hue', image: `${clientPath}serenity hue.jpeg`, logoImage: `${clientPath}SERENITY-HUE-LOGO.avif`, category: 'Beauty & Skincare' },
+  { name: 'Shri Shyam Tiffins', image: `${clientPath}shrre shyam tiffins.jpeg`, logoImage: `${logoPath}ChatGPT Image Sep 4, 2026, 02_33_52 PM.png`, category: 'Tiffin & Food Service' },
   
   // Lifestyle & Fashion
-  { name: 'Aweri', image: `${clientPath}aweri.jpeg`, logoImage: '/images/logos/aweri-logo.webp', category: 'Fashion & Lifestyle' },
-  { name: 'Nytarra', image: `${clientPath}Nytarra.jpeg`, logoImage: '/images/logos/715375796_18049721957777624_2361478550552287758_n.png', category: 'Fashion & Accessories' },
-  { name: 'Weaver Story', image: `${clientPath}weaver story.jpeg`, logoImage: `${clientPath}Weaver Story logo.webp`, category: 'Artisan Products' },
+  { name: 'Aweri', image: `${clientPath}aweri.jpeg`, logoImage: `${logoPath}aweri-logo.webp`, category: 'Sweets & Confectionery' },
+  { name: 'Nytarra', image: `${clientPath}Nytarra.jpeg`, logoImage: `${logoPath}nytarra-logo.png`, category: 'Incense & Home Fragrance' },
+  { name: 'Weaver Story', image: `${clientPath}weaver story.jpeg`, logoImage: `${clientPath}weaver-story-logo-dark.png`, category: 'Handloom & Textiles' },
   
   // Food & Beverage
-  { name: 'Little Igloo', image: `${clientPath}Little Igloo.jpeg`, logoImage: '/images/logos/lil_igloo_logo_square.avif', category: 'Baby Care & Essentials' },
-  { name: 'Pearls India', image: `${clientPath}pearls india.jpeg`, logoImage: '/images/logos/350879139_633113418875222_3952075430178214945_n.png', category: 'Corporate Gifting' },
-  { name: 'High On Churros', image: `${clientPath}High On Churros.jpeg`, logoImage: '/images/logos/416748217_1534718534036178_5283738482777238866_n.png', category: 'Food & Snacks' },
-  { name: 'Hyderabadi Chacha', image: `${clientPath}Hyderabadi Chacha.jpeg`, category: 'Regional Specialty' },
-  { name: 'YOGO', image: `${clientPath}YOGO.jpeg`, category: 'Dairy & Desserts' },
-  { name: 'Zoet', image: `${clientPath}Zoet.jpeg`, logoImage: '/images/logos/Zoet_For_Website.webp', category: 'Confectionery' },
+  { name: 'Little Igloo', image: `${clientPath}Little Igloo.jpeg`, logoImage: `${logoPath}lil_igloo_logo_square.avif`, category: 'Baby Care & Essentials' },
+  { name: 'Pearls India', image: `${clientPath}pearls india.jpeg`, logoImage: `${logoPath}350879139_633113418875222_3952075430178214945_n.png`, category: 'Jewellery' },
+  { name: 'High On Churros', image: `${clientPath}High On Churros.jpeg`, logoImage: `${logoPath}416748217_1534718534036178_5283738482777238866_n.png`, category: 'Food & Snacks' },
+  { name: 'Hyderabadi Chacha', image: `${clientPath}Hyderabadi Chacha.jpeg`, logoImage: `${logoPath}Gemini_Generated_Image_ozhhpiozhhpiozhh.png`, category: 'Restaurant & Takeaway' },
+  { name: 'YOGO', image: `${clientPath}YOGO.jpeg`, logoImage: `${logoPath}ChatGPT Image Sep 4, 2026, 02_37_18 PM.png`, category: 'Frozen Yoghurt' },
+  { name: 'Zoet', image: `${clientPath}Zoet.jpeg`, logoImage: `${logoPath}Zoet_For_Website.webp`, category: 'Ice Cream & Desserts' },
   
   // Premium & Luxury
-  { name: 'Gemeria', image: `${clientPath}Gemeria.jpeg`, logoImage: '/images/logos/608857678_18356744929201640_7860221194799015723_n.png', category: 'Luxury Goods' },
-  { name: 'Carat Bazaar', image: `${clientPath}Carat Bazaar.jpeg`, category: 'Premium Jewelry' },
-  { name: 'AAURAM', image: `${clientPath}AAURAM.jpeg`, logoImage: '/images/logos/Untitled_800_x_400_px_e2645dc5-92da-44b1-bccc-ed9161f37d0d.webp', category: 'Wellness' },
-  { name: 'Karvan', image: `${clientPath}karvan.jpeg`, category: 'Premium Collection' },
+  { name: 'Gemeria', image: `${clientPath}Gemeria.jpeg`, logoImage: `${logoPath}gemeria-hair-logo.png`, category: 'Hair Care & Extensions' },
+  { name: 'Carat Bazaar', image: `${clientPath}Carat Bazaar.jpeg`, category: 'Fine Jewellery' },
+  { name: 'AAURAM', image: `${clientPath}AAURAM.jpeg`, logoImage: `${logoPath}Untitled_800_x_400_px_e2645dc5-92da-44b1-bccc-ed9161f37d0d.webp`, category: 'Incense & Home Fragrance' },
+  { name: 'Karvan', image: `${clientPath}karvan.jpeg`, logoImage: `${logoPath}ChatGPT Image Sep 4, 2026, 02_31_35 PM.png`, category: 'Perfume & Attar' },
   
   // Technology & Other
-  { name: 'Procode', image: `${clientPath}Procode.jpeg`, category: 'Technology' },
+  { name: 'Procode', image: `${clientPath}Procode.jpeg`, category: 'Consumer Electronics' },
   { name: 'Troveaa', image: `${clientPath}Troveaa.jpeg`, category: 'E-commerce' },
-  { name: 'Kimai', image: `${clientPath}kimai.jpeg`, category: 'Premium Products' },
+  { name: 'Kimai', image: `${clientPath}kimai.jpeg`, category: 'Fine Jewellery' },
   
   // New clients
-  { name: 'AARA', image: `${clientPath}AARA.jpeg`, logoImage: `${logoPath}ChatGPT Image Sep 4, 2026, 04_44_01 PM.png`, category: 'Premium Packaging' },
-  { name: 'Maharaje', image: `${clientPath}Maharaje.jpeg`, category: 'Premium Packaging' },
-  { name: 'Amor By Tvisha', image: `${clientPath}Amor By tvisha.png`, category: 'Fashion & Lifestyle' },
+  { name: 'AARA', image: `${clientPath}AARA.jpeg`, category: 'Silver Jewellery' },
+  { name: 'Maharaje', image: `${clientPath}Maharaje.jpeg`, category: 'Festive Gifting' },
+  { name: 'Amor By Tvisha', image: `${clientPath}Amor By tvisha.png`, category: 'Beauty & Gifting' },
 ];
 
 const productCategories = [
@@ -262,6 +258,7 @@ type Filter = typeof projectFilters[number];
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [loaderHiding, setLoaderHiding] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [quoteOpen, setQuoteOpen] = useState(false);
   const [sent, setSent] = useState(false);
@@ -286,8 +283,27 @@ function App() {
   }, [filter]);
 
   useEffect(() => {
-    const timer = window.setTimeout(() => setIsLoading(false), 500);
-    return () => window.clearTimeout(timer);
+    const start = performance.now();
+    const timers: number[] = [];
+    let dismissed = false;
+
+    const dismiss = () => {
+      if (dismissed) return;
+      dismissed = true;
+      timers.push(window.setTimeout(() => {
+        setLoaderHiding(true);
+        timers.push(window.setTimeout(() => setIsLoading(false), 400));
+      }, Math.max(0, 250 - (performance.now() - start))));
+    };
+
+    if (document.readyState === 'complete') dismiss();
+    else window.addEventListener('load', dismiss, { once: true });
+    timers.push(window.setTimeout(dismiss, 1200));
+
+    return () => {
+      window.removeEventListener('load', dismiss);
+      timers.forEach(window.clearTimeout);
+    };
   }, []);
 
   useEffect(() => {
@@ -490,7 +506,7 @@ function App() {
   return (
     <>
       {isLoading && (
-        <div className="loading-screen">
+        <div className={`loading-screen${loaderHiding ? ' is-hiding' : ''}`}>
           <div className="loading-bag">
             <div className="loading-handle" />
             <div className="loading-face">Yakvee</div>
