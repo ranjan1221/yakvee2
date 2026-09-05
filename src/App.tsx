@@ -258,6 +258,7 @@ type Filter = typeof projectFilters[number];
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [loaderHiding, setLoaderHiding] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [quoteOpen, setQuoteOpen] = useState(false);
   const [sent, setSent] = useState(false);
@@ -282,8 +283,27 @@ function App() {
   }, [filter]);
 
   useEffect(() => {
-    const timer = window.setTimeout(() => setIsLoading(false), 500);
-    return () => window.clearTimeout(timer);
+    const start = performance.now();
+    const timers: number[] = [];
+    let dismissed = false;
+
+    const dismiss = () => {
+      if (dismissed) return;
+      dismissed = true;
+      timers.push(window.setTimeout(() => {
+        setLoaderHiding(true);
+        timers.push(window.setTimeout(() => setIsLoading(false), 400));
+      }, Math.max(0, 250 - (performance.now() - start))));
+    };
+
+    if (document.readyState === 'complete') dismiss();
+    else window.addEventListener('load', dismiss, { once: true });
+    timers.push(window.setTimeout(dismiss, 1200));
+
+    return () => {
+      window.removeEventListener('load', dismiss);
+      timers.forEach(window.clearTimeout);
+    };
   }, []);
 
   useEffect(() => {
@@ -486,7 +506,7 @@ function App() {
   return (
     <>
       {isLoading && (
-        <div className="loading-screen">
+        <div className={`loading-screen${loaderHiding ? ' is-hiding' : ''}`}>
           <div className="loading-bag">
             <div className="loading-handle" />
             <div className="loading-face">Yakvee</div>
